@@ -58,7 +58,7 @@ public class TestNazione {
             int abitanti = r.nextInt(500000, 2000000000);
             Nazione n = new Nazione(listaNazioni[nazione],superficie, abitanti);
             nazioni1[i] = n;
-            System.out.print("(\"" + listaNazioni[nazione] + "\"," + superficie + "," + abitanti + ")");
+            System.out.print("(\"" + listaNazioni[nazione] + "\"," +  String.format("%1$, .2f",superficie) + "," + abitanti + ")");
         }
         System.out.print("]");
         Nazione n5 = new Nazione("Italia", 302680, 58000000);
@@ -79,7 +79,7 @@ public class TestNazione {
             int abitanti = r.nextInt(500000, 2000000000);
             Nazione n = new Nazione(listaNazioni[nazione],superficie, abitanti);
             nazioni2[i] = n;
-            System.out.print("(\"" + listaNazioni[nazione] + "\"," + superficie + "," + abitanti + ")");
+            System.out.print("(\"" + listaNazioni[nazione] + "\"," +  String.format("%1$, .2f",superficie) + "," + abitanti + ")");
         }
         System.out.print("]");
         Nazione n6 = new Nazione("Giamaica", 2000000, 8000000);
@@ -99,7 +99,7 @@ public class TestNazione {
             int abitanti = r.nextInt(500000, 2000000000);
             Nazione n = new Nazione(listaNazioni[nazione],superficie, abitanti);
             nazioni3[i] = n;
-            System.out.print("(\"" + listaNazioni[nazione] + "\"," + superficie + "," + abitanti + ")");
+            System.out.print("(\"" + listaNazioni[nazione] + "\"," +  String.format("%1$, .2f",superficie) + "," + abitanti + ")");
         }
         System.out.print("]");
         Nazione n7 = new Nazione("Norvegia", 2000000, 1700000000);
@@ -121,7 +121,7 @@ public class TestNazione {
             Nazione n = new Nazione(listaNazioni[nazione],superficie, abitanti);
             if('C' == n.getDenomizione().charAt(0)) {
                 nazioni4[j] = n;
-                System.out.print("(\"" + listaNazioni[nazione] + "\"," + superficie + "," + abitanti + ")");
+                System.out.print("(\"" + listaNazioni[nazione] + "\"," + String.format("%1$, .2f",superficie) + "," + abitanti + ")");
                 j++;
             }
 
@@ -144,7 +144,7 @@ public class TestNazione {
             int abitanti = r.nextInt(500000, 2000000000);
             Nazione n = new Nazione(listaNazioni[nazione],superficie, abitanti);
             nazioni5[i] = n;
-            System.out.print("(\"" + listaNazioni[nazione] + "\"," + superficie + "," + abitanti + ")");
+            System.out.print("(\"" + listaNazioni[nazione] + "\";" +  String.format("%1$, .2f",superficie) + ";" + abitanti + ")");
         }
         System.out.print("]");
         Nazione n9 = new Nazione("Spagna", 15_000_000, 47382938);

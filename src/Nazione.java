@@ -38,7 +38,7 @@ public class Nazione {
         risultato += "(";
         risultato += this.getDenomizione();
         risultato += ",";
-        risultato += this.getSuperficieKmQ();
+        risultato += String.format("%1$, .2f", this.getSuperficieKmQ());
         risultato += ",";
         risultato += this.getNumeroAbitanti();
         risultato += ")";
