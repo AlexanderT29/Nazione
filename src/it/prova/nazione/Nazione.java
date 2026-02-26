@@ -1,3 +1,5 @@
+package it.prova.nazione;
+
 public class Nazione {
     private String denomizione;
     private double superficieKmQ;
@@ -119,3 +121,4 @@ public class Nazione {
 
 
 }
+

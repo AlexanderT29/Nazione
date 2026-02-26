@@ -1,3 +1,5 @@
+package it.prova.nazione;
+
 import java.util.Random;
 
 public class TestNazione {
